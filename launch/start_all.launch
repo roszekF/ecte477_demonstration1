@@ -1,7 +1,7 @@
 <launch>
     <!-- Arguments -->   
     <arg name="auto_start" default="false" />
-    <arg name="open_rviz" default="flase" />
+    <arg name="open_rviz" default="false" />
 
     <!-- SLAM -->
     <include file="$(find turtlebot3_slam)/launch/turtlebot3_slam.launch">
@@ -18,7 +18,7 @@
     </include>
 
     <!-- My Node -->
-    <node pkg="demonstration1" type="my_node.py" name="my_node" output="screen">
+    <node pkg="demonstration1" type="my_node.py" name="my_node" output="screen"/>
 
     <!-- RViz (don't change) -->
     <node pkg="rviz" type="rviz" name="rviz" required="true"
